@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11-A3-Living-Lab-Assignment</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <!-- DaisyUI (Tailwind Plugin) -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Tailwind CSS Script -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Styles -->
+    <style>
+        .sora-font {
+            font-family: "Sora", serif;
+            font-optical-sizing: auto;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fadeInUp {
+            animation: fadeInUp 1s ease-out forwards;
+        }
+    </style>
+</head>
+
+<body class="sora-font bg-gradient-to-b from-[#FFFFFF] to-[#DED1B7]">
+    <header class="md:container mx-auto lg:px-20 md:h-[1295px]">
+        <nav>
+            <div class="navbar pt-4 bg-base-100 border md:border-none border-green-500 bg-[#FFFFFF]">
+                <!-- Logo Section -->
+                <div class="navbar-start">
+                    <img class="hidden md:block w-[150px] h-[60px] animate-bounce" src="c2-assets/logo-header.png"
+                        alt="Logo">
+                    <img class="block md:hidden w-[100px] h-[40px] animate-pulse" src="c2-assets/logo-footer.png"
+                        alt="Logo">
+                </div>
+
+                <!-- Navigation Links for Desktop -->
+                <div class="navbar-center hidden md:flex">
+                    <ul class="menu menu-horizontal px-1 text-xl">
+                        <li><a class="hover:animate-pulse">Product</a></li>
+                        <li><a class="hover:animate-pulse">Services</a></li>
+                        <li><a class="hover:animate-pulse">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Right Section (Icons and Buttons) -->
+                <div class="navbar-end">
+                    <div class="dropdown">
+                        <button tabindex="0" role="button" class="btn btn-ghost md:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Search Icon, Cart, and Buttons -->
+                    <div class="navbar-center hidden md:flex gap-5">
+                        <i class="fa-solid fa-magnifying-glass m-auto"></i>
+                        <i class="fa-solid fa-cart-shopping m-auto"></i>
+                        <button
+                            class="btn btn-outline border-green-500 hover:bg-red-500 text-black hover:animate-pulse">Login</button>
+                        <button
+                            class="btn bg-green-500 text-white hover:bg-red-500 hover:animate-bounce">Secondary</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content (Add your sections here) -->
+    <main>
+        <!-- Additional sections like Hero, Features, Testimonials, etc. -->
+    </main>
+
+    <footer>
+        <!-- Footer content here -->
+    </footer>
+
+</body>
+
+</html>
